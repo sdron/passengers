@@ -1,0 +1,37 @@
+@import '~siteCss/styles/snippets';
+
+.PassengersPassengerEditor {
+
+  @include min-sm {
+
+    .Modal__Body {
+      @include clearfix;
+    }
+
+    .Modal__Dialog {
+      max-width: 550px;
+    }
+
+    .FormField {
+      @include container;
+      @include layout(12);
+    }
+
+    .FormLabel {
+      @include span(4);
+      text-align: right;
+    }
+
+    &__FormField__Value, .PhoneInput {
+      @include span(8);
+      @include last;
+    }
+
+    .ErrorText {
+      @include span(8);
+      @include push(4);
+    }
+
+  }
+
+}

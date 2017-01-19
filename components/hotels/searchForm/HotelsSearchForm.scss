@@ -1,0 +1,49 @@
+@import '~siteCss/styles/snippets';
+
+.HotelsSearchForm__Fields {
+  @include container();
+
+  .FormLabel {
+    color: #FFFFFF
+  }
+}
+
+.HotelsSearchForm__FieldWrapper--city {
+  @include xs { @include span(40 of 40); };
+  @include sm { @include span(20 of 40); }
+  @include md { @include span(20 of 40); }
+  @include lg { @include span(9 of 40); }
+}
+.HotelsSearchForm__FieldWrapper--check_in {
+  @include xs { @include span(40 of 40); };
+  @include sm { @include span(8 of 40); }
+  @include md { @include span(8 of 40); }
+  @include lg { @include span(7 of 40); }
+}
+.HotelsSearchForm__FieldWrapper--nights {
+  @include xs { @include span(40 of 40); };
+  @include sm { @include span(2 of 40); }
+  @include md { @include span(2 of 40); }
+  @include lg { @include span(2 of 40); }
+}
+.HotelsSearchForm__FieldWrapper--check_out {
+  @include xs { @include span(40 of 40); };
+  @include sm { @include span(8 of 40 last); }
+  @include md { @include span(8 of 40 last); }
+  @include lg { @include span(7 of 40); }
+}
+.HotelsSearchForm__FieldWrapper--guestSelector {
+  @include xs { @include span(40 of 40); };
+  @include sm { @include span(20 of 40); }
+  @include md { @include span(20 of 40); }
+  @include lg { @include span(7 of 40); }
+}
+.HotelsSearchForm__FieldWrapper--submit {
+  @include xs { @include span(40 of 40); };
+  @include sm { @include span(10 of 40); }
+  @include md { @include span(10 of 40); }
+  @include lg { @include span(8 of 40 last); }
+  .Button{
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,14 @@
+@import '~siteCss/styles/snippets';
+
+.Passengers {
+
+  @include xs {
+    &__Controls {
+      .Button {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,11 @@
+@import '~siteCss/styles/snippets';
+
+.HotelsSearchFormGuestsSelect__SelectIco {
+    @include fill-icon(#3598db);
+}
+.HotelsSearchFormGuestsSelect__BtnInSelector {
+  &:hover{
+    background-color: #3598db;
+    color: #FFFFFF;
+  }
+}

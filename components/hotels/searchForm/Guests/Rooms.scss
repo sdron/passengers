@@ -1,0 +1,81 @@
+@import '~siteCss/styles/snippets';
+
+.HotelsSearchFormRooms__Fields {
+  @include container();
+}
+
+.HotelsSearchFormRooms__FieldWrapper--room {
+  @include xs { @include span(40 of 40); }
+  @include sm { @include span(8 of 40); }
+  @include md { @include span(3 of 40); }
+  @include lg { @include span(3 of 40); }
+
+  color: #FFFFFF;
+  line-height: 34px;
+}
+.HotelsSearchFormRooms__FieldWrapper--adult {
+  @include xs { @include span(40 of 40); }
+  @include sm { @include span(8 of 40); }
+  @include md { @include span(3 of 40); }
+  @include lg { @include span(3 of 40); }
+}
+.HotelsSearchFormRooms__FieldWrapper--child {
+  @include xs { @include span(40 of 40); }
+  @include sm { @include span(8 of 40); }
+  @include md { @include span(3 of 40); }
+  @include lg { @include span(3 of 40);  }
+}
+.HotelsSearchFormRooms__FieldWrapper--childBirdDay {
+  @include xs { @include span(40 of 40); }
+  @include sm { @include span(40 of 40 break); }
+  @include md { @include span(23 of 40); padding-left: 10px }
+  @include lg { @include span(23 of 40); padding-left: 10px }
+}
+.HotelsSearchFormRooms__FieldWrapper--remBtn {
+  @include xs { @include span(40 of 40); }
+  @include sm { @include span(20 of 40 break); }
+  @include md { @include span(8 of 40 last); }
+  @include lg { @include span(8 of 40 last); }
+
+  color: #FFFFFF;
+}
+
+.HotelsSearchFormRooms__AgesWrapper {
+  @include min-sm { display: inline-flex; }
+}
+.HotelsSearchFormRooms__AgesLabel {
+  color: #FFFFFF;
+  line-height: 34px;
+  padding-right: 10px;
+}
+.HotelsSearchFormRooms__AgesInputs {
+  display: inline-flex;
+}
+.HotelsSearchFormRooms__AgesField {
+  margin-right: 5px;
+}
+
+.HotelsSearchFormRooms__AddRoom{
+  color: #FFFFFF;
+}
+
+.HotelsSearchFormRooms__IconAdd {
+  @include fill-icon($white);
+}
+.HotelsSearchFormRooms__IconRemove {
+  @include fill-icon($white);
+}
+
+.HotelsSearchFormRooms__{
+  &Header{
+    color: white;
+    @include container();
+    font-size: 12px;
+
+    .HotelsSearchFormRooms__FieldWrapper{
+      margin-bottom: -12px;
+
+    }
+  }
+}
+

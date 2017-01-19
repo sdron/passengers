@@ -1,0 +1,114 @@
+@import '~siteCss/styles/snippets';
+
+.PassengersList {
+
+  &__Passenger {
+    margin-top: $spacing-md;
+    margin-bottom: 0;
+
+    &__Title {
+      @include text-lg;
+      @include semibold;
+      padding-bottom: $spacing-sm;
+      .Icon {
+        @include fill-icon($primary-color);
+      }
+    }
+
+    &__Column {
+      @include text-sm;
+      color: $text-muted-color;
+      .Icon {
+        @include fill-icon($text-muted-color);
+      }
+    }
+
+    &__Controls {
+      .Icon {
+        @include fill-icon($text-muted-color);
+      }
+    }
+
+  }
+
+  &__Filter{
+    margin-top: $spacing-md;
+  }
+
+  &__addBtn {
+    float: left;
+  }
+
+  @include max-sm {
+    &__Passenger {
+      &__Column {
+        padding-bottom: $spacing-sm;
+      }
+    }
+  }
+
+  @include xs {
+    &__Passenger__Controls {
+      .ButtonGroup {
+        @include container;
+        display: block;
+      }
+      .Button {
+        @include span(1 of 2 inside no-gutters);
+      }
+    }
+  }
+
+  @include sm {
+    &__Passenger {
+      &__Row {
+        @include container;
+      }
+      &__Column {
+        @include gallery(6 of 12);
+      }
+    }
+  }
+
+  @include min-sm {
+    &__Passenger {
+      &__Content {
+        width: 100%;
+        display: table;
+      }
+      &__Fields {
+        display: table-cell;
+        vertical-align: top;
+      }
+      &__Controls {
+        padding-left: $spacing-sm;
+        display: table-cell;
+        white-space: nowrap;
+        vertical-align: middle;
+        width: 1px;
+        .Button {
+          float: none;
+        }
+      }
+      &__AddBtn {
+        padding-right: $spacing-sm;
+        display: table-cell;
+        vertical-align: middle;
+        width: 50px;
+      }
+    }
+  }
+
+  @include min-md {
+    &__Passenger {
+      &__Row {
+        @include container;
+      }
+      &__Column {
+        margin-bottom: 10px;
+        @include gallery(4 of 12);
+      }
+    }
+  }
+
+}
